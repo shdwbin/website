@@ -22,8 +22,8 @@
           :aria-label="social.label"
           target="_blank"
           rel="noopener noreferrer"
-          class="border-2 rounded-sm p-2 border-neutralShade">
-          <Octicon :name="social.icon" class="fill-neutralMain" />
+          class="rounded-sm p-2 bg-neutralMain hover:bg-neutralShade focus:bg-neutralShade">
+          <Octicon :name="social.icon" class="fill-accentMain" />
         </a>
       </div>
     </div>
