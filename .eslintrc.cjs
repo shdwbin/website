@@ -23,5 +23,9 @@ module.exports = {
     'prettier/prettier': 'warn',
     '@typescript-eslint/naming-convention': 'off',
     'vue/multi-word-component-names': 'off',
+    '@typescript-eslint/restrict-template-expressions': [
+      'warn',
+      { allowNullish: true },
+    ],
   },
 };
