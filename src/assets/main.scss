@@ -2,15 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-}
+@layer base {
+  @font-face {
+    font-family: Montserrat;
+    src: local('Montserrat'), local('Montserrat Italic'),
+      url('@/assets/fonts/montserrat/montserrat.ttf') format('truetype'),
+      url('@/assets/fonts/montserrat/montserrat-italic.ttf') format('truetype');
+    font-display: swap;
+  }
 
-* {
-  box-sizing: border-box;
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+
+    @apply bg-accentMain text-neutralShade;
+
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-neutralMain font-bold;
+    font-family: Montserrat;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl leading-tight;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
 }
