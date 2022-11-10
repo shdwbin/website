@@ -11,6 +11,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@primer/octicons": "^17.9.0",
     "autoprefixer": "^10.4.13",
     "daisyui": "^2.38.1",
     "postcss": "^8.4.18",
@@ -23,6 +24,7 @@
     "@rushstack/eslint-patch": "1.2.0",
     "@types/jsdom": "20.0.0",
     "@types/node": "18.11.9",
+    "@types/primer__octicons": "^17.5.0",
     "@vitejs/plugin-vue": "3.2.0",
     "@vue/eslint-config-prettier": "7.0.0",
     "@vue/eslint-config-typescript": "11.0.2",
