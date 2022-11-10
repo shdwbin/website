@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center bg-repeat h-[63vh] justify-center mb-16"
+    class="flex flex-col items-center bg-repeat h-[63vh] justify-center mb-28"
     :style="{
       background: `linear-gradient(180deg, rgba(0, 0, 0, .3) 70%, rgba(0, 0, 0, .75) 95%, rgba(0, 0, 0, 1) 100%), url(${HeroImage})`,
       backgroundSize: '100% 310%',
