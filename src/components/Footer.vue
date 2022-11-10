@@ -13,7 +13,7 @@
       <p>
         <Slogan />
       </p>
-      <p class="font-bold">&copy; {{ year }} shdwbin.</p>
+      <p class="font-bold">&copy; {{ year }} shadowbin.</p>
       <div class="flex flex-row mt-4">
         <a
           v-for="social in socialMedia"
