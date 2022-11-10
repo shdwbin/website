@@ -1,7 +1,9 @@
 <template>
   <section class="mb-4" :aria-label="name">
     <Divider class="mb-4" v-bind="props" />
-    <slot />
+    <div class="max-w-5xl w-4/5 m-auto">
+      <slot />
+    </div>
   </section>
 </template>
 
