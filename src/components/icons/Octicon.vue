@@ -1,5 +1,5 @@
 <template>
-  <span v-html="svg" />
+  <span v-html="svg" class="m-auto" />
 </template>
 
 <script setup lang="ts">
