@@ -19,13 +19,16 @@
     "scope": "vue",
     "prefix": "vuebase",
     "body": [
-      "<script setup lang=\"ts\">",
-      "",
-      "</script>",
-      "",
       "<template>",
       "  $0",
-      "</template>"
+      "</template>",
+      "",
+      "<script setup lang=\"ts\"></script>"
     ]
+  },
+  "Style with SCSS and scoped": {
+    "scope": "vue",
+    "prefix": ["scss", "stylescoped"],
+    "body": ["<style lang=\"scss\" scoped>", "  $0", "</style>"]
   }
 }
