@@ -18,12 +18,16 @@
       <Octicon
         v-if="leftIcon"
         class="mr-1 ml-[-.5rem] max-h-full"
-        :name="leftIcon" />
+        :name="leftIcon"
+        role="presentation"
+        aria-hidden="true" />
       <slot />
       <Octicon
         v-if="rightIcon"
         class="ml-1 mr-[-.5rem] max-h-full"
-        :name="rightIcon" />
+        :name="rightIcon"
+        role="presentation"
+        aria-hidden="true" />
     </div>
   </div>
 </template>

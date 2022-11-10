@@ -1,5 +1,6 @@
 <template>
   <svg
+    aria-label="Shadowbin logo"
     width="85.416931"
     height="100"
     viewBox="0 0 85.416931 100">
