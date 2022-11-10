@@ -5,11 +5,9 @@
       <div class="float-right h-full flex flex-row items-center text-lg gap-4">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/">Roadmap</RouterLink>
-        <RouterLink to="/"
-          ><PillButton gradient-direction="to-r" bold
-            >Join waitlist</PillButton
-          ></RouterLink
-        >
+        <RouterLink to="/">
+          <PillButton gradient-direction="to-r" bold>Join waitlist</PillButton>
+        </RouterLink>
       </div>
     </div>
   </header>

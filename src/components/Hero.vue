@@ -15,7 +15,7 @@
     <h2 class="text-[2.7rem] max-w-3xl text-center my-8">
       <Slogan />
     </h2>
-    <PillButton icon="arrow-right" class="text-xl" :bold="false">
+    <PillButton right-icon="arrow-right" class="text-xl" nogradient>
       <RouterLink to="/">Join waitlist</RouterLink>
     </PillButton>
   </div>

@@ -1,15 +1,30 @@
 <template>
   <div
-    class="border rounded-full bg-neutralMain px-4 py-1 text-accentMain flex flex-row flex-nowrap"
-    :class="`${gradientDirection ? gradient : ''} ${
-      bold === false ? '' : 'font-bold'
+    class="rounded-full p-1"
+    :class="`
+    ${bold ? 'font-bold' : ''}
+    ${outlined ? '' : ''}
+    ${
+      nogradient
+        ? 'bg-neutralMain'
+        : 'bg-gradient-to-r from-accentTintStart to-accentTintEnd'
     }`">
-    <Octicon v-if="side === 'left' && icon" :name="icon" />
-    <slot />
-    <Octicon
-      class="ml-2 mr-[-.5rem]"
-      v-if="(side === 'right' || side === undefined) && icon"
-      :name="icon" />
+    <div
+      class="py-[3px] px-5 text-accentMain flex flex-row flex-nowrap rounded-full"
+      :style="{
+        color: outlined || !nogradient ? '#EEEEEE' : '#000000',
+      }"
+      :class="`${outlined ? 'bg-accentMain' : ''}`">
+      <Octicon
+        v-if="leftIcon"
+        class="mr-1 ml-[-.5rem] max-h-full"
+        :name="leftIcon" />
+      <slot />
+      <Octicon
+        v-if="rightIcon"
+        class="ml-1 mr-[-.5rem] max-h-full"
+        :name="rightIcon" />
+    </div>
   </div>
 </template>
 
@@ -17,20 +32,11 @@
   import type { IconName } from '@primer/octicons';
   import Octicon from '../icons/Octicon.vue';
 
-  const props = defineProps<{
-    side?: 'right' | 'left';
-    icon?: IconName;
+  defineProps<{
+    leftIcon?: IconName;
+    rightIcon?: IconName;
     bold?: boolean;
-    gradientDirection?:
-      | 'to-t'
-      | 'to-tr'
-      | 'to-r'
-      | 'to-br'
-      | 'to-b'
-      | 'to-bl'
-      | 'to-l'
-      | 'to-tl';
+    outlined?: boolean;
+    nogradient?: boolean;
   }>();
-
-  const gradient = `bg-gradient-${props.gradientDirection!} from-accentTintStart to-accentTintEnd text-neutralMain border-none`;
 </script>
