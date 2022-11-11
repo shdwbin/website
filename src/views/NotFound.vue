@@ -11,8 +11,8 @@
 </template>
 
 <script setup lang="ts">
-  import PillButton from '@/components/buttons/PillButton.vue';
   import { useRoute } from 'vue-router';
+  import PillButton from '@/components/buttons/PillButton.vue';
 
   const route = useRoute();
 </script>

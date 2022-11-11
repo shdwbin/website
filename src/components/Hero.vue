@@ -22,8 +22,8 @@
 </template>
 
 <script setup lang="ts">
-  import ShadowbinIcon from '@/components/icons/ShadowbinIcon.vue';
-  import HeroImage from '@/assets/HeroImage.png';
   import PillButton from './buttons/PillButton.vue';
   import Slogan from './Slogan.vue';
+  import ShadowbinIcon from '@/components/icons/ShadowbinIcon.vue';
+  import HeroImage from '@/assets/HeroImage.png';
 </script>

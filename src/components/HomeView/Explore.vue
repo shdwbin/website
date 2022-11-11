@@ -20,11 +20,11 @@
 </template>
 
 <script setup lang="ts">
+  import type { Component } from 'vue';
   import LanguageShowoff from '@/components/LanguageShowoff.vue';
   import PillButton from '@/components/buttons/PillButton.vue';
   import VueLogo from '@/components/logos/VueLogo.vue';
   import TypescriptLogo from '@/components/logos/TypescriptLogo.vue';
-  import type { Component } from 'vue';
 
   const languages: Array<{ icon?: Component; name: string; pad?: boolean }> = [
     { icon: VueLogo as Component, name: 'Vue.JS', pad: true },

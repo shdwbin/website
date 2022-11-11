@@ -33,12 +33,12 @@
 </template>
 
 <script setup lang="ts">
-  import ShadowbinIcon from '@/components/icons/ShadowbinIcon.vue';
   import type { IconName } from '@primer/octicons';
   import Octicon from './icons/Octicon.vue';
   import Slogan from './Slogan.vue';
   import VerticalDivider from './VerticalDivider.vue';
   import ThemeToggle from './ThemeToggle.vue';
+  import ShadowbinIcon from '@/components/icons/ShadowbinIcon.vue';
 
   const year = new Date().getFullYear();
 

@@ -9,11 +9,20 @@ module.exports = {
   },
   extends: [
     'xo-typescript',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     '@vue/eslint-config-typescript',
     '@vue/eslint-config-prettier',
   ],
+  settings: {
+    'import/resolver': {
+      typescript: true,
+      node: true,
+    },
+    'import/extensions': ['.ts', '.js', '.vue'],
+  },
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -28,5 +37,7 @@ module.exports = {
       { allowNullish: true },
     ],
     '@typescript-eslint/no-unsafe-assignment': 'off',
+    'import/default': 'off',
+    'import/order': 'warn',
   },
 };
