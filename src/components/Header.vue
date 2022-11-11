@@ -1,7 +1,7 @@
 <template>
   <header class="h-16 p-3">
     <div class="w-5/6 max-w-5xl mx-auto">
-      <ShadowbinIcon class="max-h-full m-auto float-left" height="2.5rem" />
+      <ShadowbinIcon class="max-h-full m-auto float-left h-10" />
       <div class="float-right h-full flex flex-row items-center text-lg gap-4">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/">Roadmap</RouterLink>
