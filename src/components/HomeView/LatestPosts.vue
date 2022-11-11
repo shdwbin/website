@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col items-center">
-    <h2 class="mt-8 mb-5">Latest Blog Posts</h2>
+    <h2 class="mt-8">Latest Blog Posts</h2>
 
-    <RouterLink to="/" class="float-right h-min mt-auto my-16">
+    <RouterLink to="/" class="float-right h-min mt-8 mb-24">
       <PillButton right-icon="arrow-right" nogradient>See all</PillButton>
     </RouterLink>
 
@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-  import BlogPreview from '@/components/BlogPreview.vue';
+  import BlogPreview from '@/components/HomeView/BlogPreview.vue';
   import PillButton from '@/components/buttons/PillButton.vue';
 
   const posts = [

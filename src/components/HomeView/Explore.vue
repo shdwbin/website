@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col items-center mt-20">
-    <div class="flex flex-col items-center mb-12 gap-3">
+    <div class="flex flex-col items-center mb-24">
       <h2>Explore Shadowbin</h2>
       <p>Lorem ipsum, lorem ipsum.</p>
-      <RouterLink to="/" class="float-right h-min mt-auto">
+      <RouterLink to="/" class="float-right h-min mt-8">
         <PillButton right-icon="arrow-right" nogradient>See all</PillButton>
       </RouterLink>
     </div>
@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
   import type { Component } from 'vue';
-  import LanguageShowoff from '@/components/LanguageShowoff.vue';
+  import LanguageShowoff from '@/components/HomeView/LanguageShowoff.vue';
   import PillButton from '@/components/buttons/PillButton.vue';
   import VueLogo from '@/components/logos/VueLogo.vue';
   import TypescriptLogo from '@/components/logos/TypescriptLogo.vue';
