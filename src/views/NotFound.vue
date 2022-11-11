@@ -5,7 +5,7 @@
       The page <code>/{{ route.params.path[0] }}</code> was not found.
     </p>
     <RouterLink to="/">
-      <PillButton bold class="pt-[104px]"> Go to home </PillButton>
+      <PillButton class="mt-8" bold nogradient> Go to home </PillButton>
     </RouterLink>
   </div>
 </template>
