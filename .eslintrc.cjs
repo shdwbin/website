@@ -27,5 +27,6 @@ module.exports = {
       'warn',
       { allowNullish: true },
     ],
+    '@typescript-eslint/no-unsafe-assignment': 'off',
   },
 };
