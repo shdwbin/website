@@ -1,4 +1,5 @@
 import HomeView from '@/views/HomeView.vue';
+import NotFound from '@/views/NotFound.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
@@ -8,6 +9,10 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+    },
+    {
+      path: '/:path(.*)*',
+      component: NotFound,
     },
   ],
 });
