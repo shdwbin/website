@@ -1,6 +1,6 @@
 <template>
   <section class="mb-28" :aria-label="name">
-    <Divider class="mb-28" v-bind="props" />
+    <Divider class="mb-14" v-bind="props" />
     <div class="max-w-5xl w-4/5 m-auto">
       <slot />
     </div>
