@@ -32,7 +32,7 @@
   import DOMPurify from 'dompurify';
   import { marked } from 'marked';
   import HeroImage from '@/assets/HeroImage.png';
-  import PillButton from './buttons/PillButton.vue';
+  import PillButton from '@/components/buttons/PillButton.vue';
 
   const props = defineProps<{
     title: string;
