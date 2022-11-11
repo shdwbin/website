@@ -15,6 +15,8 @@
       </p>
       <p class="font-bold">&copy; {{ year }} shadowbin.</p>
       <div class="flex flex-row mt-4">
+        <ThemeToggle />
+        <VerticalDivider />
         <a
           v-for="social in socialMedia"
           :key="social.link"
@@ -35,6 +37,8 @@
   import type { IconName } from '@primer/octicons';
   import Octicon from './icons/Octicon.vue';
   import Slogan from './Slogan.vue';
+  import VerticalDivider from './VerticalDivider.vue';
+  import ThemeToggle from './ThemeToggle.vue';
 
   const year = new Date().getFullYear();
 
