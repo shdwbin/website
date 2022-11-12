@@ -1,6 +1,6 @@
 # website
 
-The source code of [Shadowbin's landing page](https://shadowb.in).
+This repository contains the source code of Shadowbin's website [landing page](https://shadowb.in).
 
 ## Configuration
 
