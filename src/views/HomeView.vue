@@ -27,17 +27,8 @@
     velit et accusamus?
   </Section>
   <Section name="Who We Are">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptates!
-    Cumque perspiciatis earum, aut excepturi maiores voluptates harum possimus
-    culpa temporibus corporis nulla quia at eaque expedita eligendi dignissimos
-    tenetur corrupti unde explicabo! Facilis perspiciatis deserunt qui ab
-    molestiae iusto recusandae blanditiis, eligendi delectus ad reiciendis.
-    Quasi fugit aliquam, itaque dolorem obcaecati possimus minus. Ipsam alias
-    exercitationem, dolore reiciendis, aliquid id sit illo ab beatae ratione ad
-    ullam totam eaque cumque nulla sed, vitae nihil laudantium assumenda
-    cupiditate. Aliquam, est necessitatibus? Assumenda praesentium illo
-    blanditiis ex quo! Expedita nam quaerat odio hic id, eum, quae ea, excepturi
-    velit et accusamus?
+    <WeAreShadowbin class="mb-20" />
+    <InverstorsSponsors />
   </Section>
   <Section name="Get Involved">
     <LatestPosts />
@@ -50,4 +41,6 @@
   import Hero from '@/components/Hero.vue';
   import LatestPosts from '@/components/HomeView/LatestPosts.vue';
   import Explore from '@/components/HomeView/Explore.vue';
+  import WeAreShadowbin from '@/components/HomeView/WeAreShadowbin.vue';
+  import InverstorsSponsors from '@/components/HomeView/InverstorsAndSponsors.vue';
 </script>
