@@ -1,6 +1,8 @@
 /* eslint-env node */
 require('@rushstack/eslint-patch/modern-module-resolution');
 
+const { resolve } = require('node:path');
+
 module.exports = {
   root: true,
   env: {
@@ -26,18 +28,24 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.config.json'],
+    project: [resolve(__dirname, 'tsconfig.json'), resolve(__dirname, 'tsconfig.config.json')],
   },
   rules: {
     'prettier/prettier': 'warn',
-    '@typescript-eslint/naming-convention': 'off',
+
     'vue/multi-word-component-names': 'off',
+
+    '@typescript-eslint/naming-convention': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/restrict-template-expressions': [
       'warn',
       { allowNullish: true },
     ],
-    '@typescript-eslint/no-unsafe-assignment': 'off',
-    'import/default': 'off',
+
     'import/order': 'warn',
+    'import/default': 'off',
+    'import/named': 'off',
+    'import/namespace': 'off',
+    'import/no-named-as-default-member': 'off',
   },
 };
