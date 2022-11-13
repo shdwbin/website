@@ -30,5 +30,10 @@
     "scope": "vue",
     "prefix": ["scss", "stylescoped"],
     "body": ["<style lang=\"scss\" scoped>", "  $0", "</style>"]
+  },
+  "Script setup with typescript": {
+    "scope": "vue",
+    "prefix": "script",
+    "body": "<script setup lang=\"ts\">\n  $0\n</script>"
   }
 }
