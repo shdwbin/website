@@ -1,8 +1,8 @@
 <template>
   <section class="mb-28" :aria-label="name">
-    <Divider class="mb-14" v-bind="props" />
+    <Divider class="mb-14" :name="name" />
     <div class="max-w-5xl w-4/5 m-auto">
-      <slot />
+      <slot v-bind="$props" />
     </div>
   </section>
 </template>
@@ -10,7 +10,7 @@
 <script setup lang="ts">
   import Divider from '@/components/Divider.vue';
 
-  const props = defineProps<{
+  defineProps<{
     name: string;
   }>();
 </script>
