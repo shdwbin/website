@@ -3,7 +3,7 @@
     <div class="divider-line" />
     <div
       :div="`divider-${contentID}`"
-      class="border-2 border-accentShade rounded-sm py-1 px-4">
+      class="border-2 border-accentShade bg-accentShade rounded-sm py-1 px-4">
       <p>{{ name }}</p>
     </div>
     <div class="divider-line" />
