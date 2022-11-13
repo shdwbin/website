@@ -10,7 +10,7 @@
         : 'bg-gradient-to-r from-accentTintStart to-accentTintEnd'
     }`">
     <div
-      class="py-[3px] px-5 text-accentMain flex flex-row flex-nowrap rounded-full"
+      class="py-[2px] px-5 text-accentMain flex flex-row flex-nowrap rounded-full"
       :style="{
         color: outlined || !nogradient ? '#EEEEEE' : '#000000',
       }"
