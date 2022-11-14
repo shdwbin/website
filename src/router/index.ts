@@ -1,6 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '@/views/HomeView.vue';
-import NotFound from '@/views/NotFound.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,11 +6,11 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: async () => import('@/views/HomeView.vue'),
     },
     {
       path: '/:path(.*)*',
-      component: NotFound,
+      component: async () => import('@/views/NotFound.vue'),
     },
   ],
 });
