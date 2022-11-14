@@ -25,7 +25,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="rounded-sm p-2 bg-neutralMain hover:bg-neutralShade focus:bg-neutralShade">
-          <Octicon :name="social.icon" class="fill-accentMain" />
+          <component :is="social.icon" />
         </a>
       </div>
     </div>
@@ -33,8 +33,8 @@
 </template>
 
 <script setup lang="ts">
-  import type { IconName } from '@primer/octicons';
-  import Octicon from './icons/Octicon.vue';
+  import type { Component } from 'vue';
+  import { Github } from 'lucide-vue-next';
   import Slogan from './Slogan.vue';
   import VerticalDivider from './VerticalDivider.vue';
   import ThemeToggle from './ThemeToggle.vue';
@@ -42,9 +42,9 @@
 
   const year = new Date().getFullYear();
 
-  const socialMedia: Array<{ icon: IconName; link: string; label: string }> = [
+  const socialMedia: Array<{ icon: Component; link: string; label: string }> = [
     {
-      icon: 'mark-github',
+      icon: Github,
       link: 'https://github.com/shdwbin',
       label: 'Github',
     },

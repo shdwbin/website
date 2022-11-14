@@ -4,7 +4,7 @@
       <h2>Explore Shadowbin</h2>
       <p>Lorem ipsum, lorem ipsum.</p>
       <RouterLink to="/" class="float-right h-min mt-8">
-        <PillButton right-icon="arrow-right" nogradient>See all</PillButton>
+        <PillButton :right-icon="ArrowRight" nogradient>See all</PillButton>
       </RouterLink>
     </div>
 
@@ -21,6 +21,7 @@
 
 <script setup lang="ts">
   import type { Component } from 'vue';
+  import { ArrowRight } from 'lucide-vue-next';
   import LanguageShowoff from '@/components/HomeView/LanguageShowoff.vue';
   import PillButton from '@/components/buttons/PillButton.vue';
   import VueLogo from '@/components/logos/VueLogo.vue';

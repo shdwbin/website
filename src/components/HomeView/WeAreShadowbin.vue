@@ -40,8 +40,9 @@
 </template>
 
 <script setup lang="ts">
-  import ShadowbinIcon from '../icons/ShadowbinIcon.vue';
+  import { Github } from 'lucide-vue-next';
   import PersonBlock, { type Person } from './PersonCard.vue';
+  import ShadowbinIcon from '@/components/icons/ShadowbinIcon.vue';
 
   const people: Person[] = [
     {
@@ -49,9 +50,9 @@
       position: 'Very long position',
       bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
       badges: [
-        { icon: 'mark-github', link: '' },
-        { icon: 'mark-github', link: '' },
-        { icon: 'mark-github', link: '' },
+        { icon: Github, link: '' },
+        { icon: Github, link: '' },
+        { icon: Github, link: '' },
       ],
     },
     {
@@ -59,15 +60,15 @@
       position: 'Not so long',
       bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       badges: [
-        { icon: 'mark-github', link: '' },
-        { icon: 'mark-github', link: '' },
+        { icon: Github, link: '' },
+        { icon: Github, link: '' },
       ],
     },
     {
       name: 'Nameson',
       position: 'Position',
       bio: 'Really short bio.',
-      badges: [{ icon: 'mark-github', link: '' }],
+      badges: [{ icon: Github, link: '' }],
     },
     {
       name: 'Short',

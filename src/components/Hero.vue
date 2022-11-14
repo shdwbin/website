@@ -13,15 +13,16 @@
       <h1 class="h-min my-auto text-[4.5rem]">shadowbin</h1>
     </div>
     <h2 class="text-[2.7rem] max-w-3xl text-center my-8">
-      <Slogan />
+      <Slogan gradient="end" />
     </h2>
-    <PillButton right-icon="arrow-right" class="text-xl" nogradient>
+    <PillButton :right-icon="ArrowRight" class="text-xl" nogradient>
       <RouterLink to="/">Join waitlist</RouterLink>
     </PillButton>
   </div>
 </template>
 
 <script setup lang="ts">
+  import { ArrowRight } from 'lucide-vue-next';
   import PillButton from './buttons/PillButton.vue';
   import Slogan from './Slogan.vue';
   import ShadowbinIcon from '@/components/icons/ShadowbinIcon.vue';

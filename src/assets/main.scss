@@ -60,4 +60,8 @@
   code {
     @apply bg-accentShade p-1 rounded-[5px] border border-neutralShade;
   }
+
+  svg {
+    @apply text-accentShade;
+  }
 }

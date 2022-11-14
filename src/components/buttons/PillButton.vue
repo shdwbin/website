@@ -15,16 +15,18 @@
         color: outlined || !nogradient ? '#EEEEEE' : '#000000',
       }"
       :class="`${outlined ? 'bg-accentMain' : ''}`">
-      <Octicon
+      <component
+        :is="leftIcon"
         v-if="leftIcon"
-        class="mr-1 ml-[-.5rem] max-h-full"
+        class="mr-1 ml-[-.5rem] max-h-full my-auto"
         :name="leftIcon"
         role="presentation"
         aria-hidden="true" />
       <slot />
-      <Octicon
+      <component
+        :is="rightIcon"
         v-if="rightIcon"
-        class="ml-1 mr-[-.5rem] max-h-full"
+        class="ml-1 mr-[-.5rem] max-h-full my-auto"
         :name="rightIcon"
         role="presentation"
         aria-hidden="true" />
@@ -33,12 +35,11 @@
 </template>
 
 <script setup lang="ts">
-  import type { IconName } from '@primer/octicons';
-  import Octicon from '../icons/Octicon.vue';
+  import type { Component } from 'vue';
 
   defineProps<{
-    leftIcon?: IconName;
-    rightIcon?: IconName;
+    leftIcon?: Component;
+    rightIcon?: Component;
     bold?: boolean;
     outlined?: boolean;
     nogradient?: boolean;
