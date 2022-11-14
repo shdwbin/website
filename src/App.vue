@@ -9,8 +9,11 @@
 </template>
 
 <script setup lang="ts">
+  import { useHead } from '@vueuse/head';
   import Footer from './components/Footer.vue';
   import Header from '@/components/Header.vue';
+
+  useHead({});
 </script>
 
 <style lang="scss" scoped>

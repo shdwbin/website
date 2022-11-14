@@ -37,10 +37,13 @@
 </template>
 
 <script setup lang="ts">
+  import { useHead } from '@vueuse/head';
   import Section from '@/components/Section.vue';
   import Hero from '@/components/Hero.vue';
   import LatestPosts from '@/components/HomeView/LatestPosts.vue';
   import Explore from '@/components/HomeView/Explore.vue';
   import WeAreShadowbin from '@/components/HomeView/WeAreShadowbin.vue';
   import InverstorsSponsors from '@/components/HomeView/InverstorsAndSponsors.vue';
+
+  useHead({});
 </script>

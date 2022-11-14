@@ -12,7 +12,12 @@
 
 <script setup lang="ts">
   import { useRoute } from 'vue-router';
+  import { useHead } from '@vueuse/head';
   import PillButton from '@/components/buttons/PillButton.vue';
 
   const route = useRoute();
+
+  useHead({
+    title: 'Page Not Found',
+  });
 </script>

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^9.5.0",
+    "@vueuse/head": "^1.0.10",
     "autoprefixer": "^10.4.13",
     "daisyui": "^2.38.1",
     "dompurify": "^2.4.1",
