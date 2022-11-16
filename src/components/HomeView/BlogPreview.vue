@@ -2,7 +2,7 @@
   <div
     class="border rounded-md aspect-video max-w-md flex items-end p-6 flex-shrink flex-grow"
     :style="{
-      backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.5) 100%), url(${
+      backgroundImage: `linear-gradient(180deg, rgba(${color}, 0.85) 30%, rgba(${color}, 0.5) 100%), url(${
         imageURL ?? HeroImage
       })`,
       backgroundSize: '100% auto',
@@ -21,7 +21,7 @@
           :innerHTML="sanitized"></p>
       </div>
       <RouterLink :to="link" class="float-right h-min mt-auto ml-4">
-        <PillButton nogradient>Read</PillButton>
+        <PillButton>Read</PillButton>
       </RouterLink>
     </div>
   </div>
@@ -33,6 +33,7 @@
   import { marked } from 'marked';
   import HeroImage from '@/assets/HeroImage.png';
   import PillButton from '@/components/buttons/PillButton.vue';
+  import usePreferenceStore from '@/stores/preferences';
 
   const props = defineProps<{
     title: string;
@@ -40,6 +41,12 @@
     link: string;
     imageURL?: string;
   }>();
+
+  const preferences = usePreferenceStore();
+
+  const color = computed(() =>
+    preferences.lightTheme ? '200, 200, 200' : '0, 0, 0'
+  );
 
   const rendered = computed(() => marked.parse(props.preview));
   const sanitized = computed(() => DOMPurify.sanitize(rendered.value));

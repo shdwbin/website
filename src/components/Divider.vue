@@ -3,7 +3,7 @@
     <div class="divider-line" />
     <div
       :div="`divider-${contentID}`"
-      class="border-2 border-accentShade bg-accentShade rounded-sm py-1 px-4">
+      class="rounded-sm py-2 px-4 border-neutralShade bg-neutralShade dark:border-accentShade dark:bg-accentShade text-accentMain dark:text-neutralMain">
       <p>{{ name }}</p>
     </div>
     <div class="divider-line" />
@@ -24,6 +24,6 @@
 
 <style lang="scss" scoped>
   .divider-line {
-    @apply flex-grow h-0 border my-auto border-accentShade;
+    @apply flex-grow h-0 border my-auto border-neutralShade bg-neutralShade dark:border-accentShade dark:bg-accentShade;
   }
 </style>

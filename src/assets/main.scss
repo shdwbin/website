@@ -5,10 +5,18 @@
 @layer base {
   @font-face {
     font-family: Montserrat;
-    src: local('Montserrat'), local('Montserrat Italic'),
-      url('@/assets/fonts/montserrat/montserrat.ttf') format('truetype'),
+    src: local('Montserrat'),
+      url('@/assets/fonts/montserrat/montserrat.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Montserrat;
+    src: local('Montserrat Italic'),
       url('@/assets/fonts/montserrat/montserrat-italic.ttf') format('truetype');
     font-display: swap;
+    font-style: italic;
   }
 
   @font-face {
@@ -16,6 +24,14 @@
     src: local('Noto Sans'),
       url('@/assets/fonts/notosans/notosans.ttf') format('truetype');
     font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Noto Sans';
+    src: local('Noto Sans Italic'),
+      url('@/assets/fonts/notosans/notosans-italic.ttf') format('truetype');
+    font-display: swap;
+    font-style: italic;
   }
 
   html,
@@ -28,7 +44,7 @@
 
     font-family: 'Noto Sans', sans-serif;
 
-    @apply bg-accentMain text-neutralShade;
+    @apply dark:bg-accentMain dark:text-neutralMain transition-all duration-150 ease-in-out;
   }
 
   * {
@@ -41,7 +57,7 @@
   h4,
   h5,
   h6 {
-    @apply text-neutralMain font-bold;
+    @apply text-accentMain dark:text-neutralMain font-bold;
     font-family: Montserrat;
   }
 
@@ -58,10 +74,10 @@
   }
 
   code {
-    @apply bg-accentShade p-1 rounded-[5px] border border-neutralShade;
+    @apply bg-neutralShade dark:bg-accentShade p-1 rounded-[5px] border border-neutralShade;
   }
 
   svg {
-    @apply text-accentShade;
+    @apply text-neutralShade dark:text-accentShade;
   }
 }

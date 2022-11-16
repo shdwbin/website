@@ -12,7 +12,7 @@
           </h3>
         </div>
         <ShadowbinIcon
-          class="inline max-h-14 aspect-square ml-4 fill-neutralShade" />
+          class="inline max-h-14 aspect-square ml-4 fill-accentShade dark:fill-neutralShade" />
       </div>
       <p>
         We're an international team of developers working on creating the best
@@ -41,38 +41,44 @@
 
 <script setup lang="ts">
   import { Github } from 'lucide-vue-next';
+  import { faker } from '@faker-js/faker/locale/en_US';
   import PersonBlock, { type Person } from './PersonCard.vue';
   import ShadowbinIcon from '@/components/icons/ShadowbinIcon.vue';
 
   const people: Person[] = [
     {
-      name: 'Name namesonsonson',
-      position: 'Very long position',
-      bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
+      name: faker.name.fullName(),
+      position: faker.name.jobTitle(),
+      image: faker.image.avatar(),
+      bio: faker.hacker.phrase(),
       badges: [
-        { icon: Github, link: '' },
-        { icon: Github, link: '' },
-        { icon: Github, link: '' },
+        { icon: Github, link: '', name: 'Github' },
+        { icon: Github, link: '', name: 'Github' },
+        { icon: Github, link: '', name: 'Github' },
       ],
     },
     {
-      name: 'Name nameson',
-      position: 'Not so long',
-      bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      name: faker.name.fullName(),
+      position: faker.name.jobTitle(),
+      image: faker.image.avatar(),
+      bio: faker.hacker.phrase(),
       badges: [
-        { icon: Github, link: '' },
-        { icon: Github, link: '' },
+        { icon: Github, link: '', name: 'Github' },
+        { icon: Github, link: '', name: 'Github' },
       ],
     },
     {
-      name: 'Nameson',
-      position: 'Position',
-      bio: 'Really short bio.',
-      badges: [{ icon: Github, link: '' }],
+      name: faker.name.fullName(),
+      position: faker.name.jobTitle(),
+      image: faker.image.avatar(),
+      bio: faker.hacker.phrase(),
+      badges: [{ icon: Github, link: '', name: 'Github' }],
     },
     {
-      name: 'Short',
-      position: '',
+      name: faker.name.fullName(),
+      position: faker.name.jobTitle(),
+      image: faker.image.avatar(),
+      bio: faker.hacker.phrase(),
       badges: [],
     },
   ];

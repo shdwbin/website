@@ -11,6 +11,12 @@ const usePreferenceStore = defineStore('preferences', {
       this.lightTheme = theme;
     },
   },
+
+  getters: {
+    theme(state) {
+      return state.lightTheme ? 'light' : 'dark';
+    },
+  },
 });
 
 export default usePreferenceStore;

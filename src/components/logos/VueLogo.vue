@@ -2,7 +2,8 @@
   <svg
     version="1.1"
     viewBox="0 0 261.76 226.69"
-    xmlns="http://www.w3.org/2000/svg">
+    xmlns="http://www.w3.org/2000/svg"
+    aria-label="Vue.JS logo">
     <g transform="matrix(1.3333 0 0 -1.3333 -76.311 313.34)">
       <g transform="translate(178.06 235.01)">
         <path

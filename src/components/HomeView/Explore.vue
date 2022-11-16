@@ -4,7 +4,11 @@
       <h2>Explore Shadowbin</h2>
       <p>Lorem ipsum, lorem ipsum.</p>
       <RouterLink to="/" class="float-right h-min mt-8">
-        <PillButton :right-icon="ArrowRight" nogradient>See all</PillButton>
+        <PillButton
+          :right-icon="ArrowRight"
+          :theme="preferences.lightTheme ? 'transparent' : 'theme'"
+          >See all</PillButton
+        >
       </RouterLink>
     </div>
 
@@ -26,6 +30,9 @@
   import PillButton from '@/components/buttons/PillButton.vue';
   import VueLogo from '@/components/logos/VueLogo.vue';
   import TypescriptLogo from '@/components/logos/TypescriptLogo.vue';
+  import usePreferenceStore from '@/stores/preferences';
+
+  const preferences = usePreferenceStore();
 
   const languages: Array<{ icon?: Component; name: string; pad?: boolean }> = [
     { icon: VueLogo as Component, name: 'Vue.JS', pad: true },
