@@ -6,7 +6,7 @@
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/">Roadmap</RouterLink>
         <RouterLink to="/">
-          <PillButton theme="gradient" bold>Join waitlist</PillButton>
+          <PillButton theme="gradient" bold>Join Cloud waitlist</PillButton>
         </RouterLink>
       </div>
     </div>
