@@ -47,39 +47,27 @@
 
   const people: Person[] = [
     {
-      name: faker.name.fullName(),
-      position: faker.name.jobTitle(),
+      name: "Hanna",
+      position: "Founder",
       image: faker.image.avatar(),
-      bio: faker.hacker.phrase(),
-      badges: [
-        { icon: Github, link: '', name: 'Github' },
-        { icon: Github, link: '', name: 'Github' },
-        { icon: Github, link: '', name: 'Github' },
-      ],
+      bio: "Lorem ipsum, lorem ipsum.",
+      badges: [{ icon: Github, link: 'https://github.com/xhxnna', name: 'Github' }],
     },
     {
-      name: faker.name.fullName(),
-      position: faker.name.jobTitle(),
+      name: "Sophia",
+      position: "Lead UX Engineer",
       image: faker.image.avatar(),
-      bio: faker.hacker.phrase(),
-      badges: [
-        { icon: Github, link: '', name: 'Github' },
-        { icon: Github, link: '', name: 'Github' },
-      ],
+      bio: "Sophia is the person behind all the UX and UI design of Shadowbin. " +
+           "She has worked at numerous startups with years of professional experience " +
+           "in the software industry.",
+      badges: [{ icon: Github, link: 'https://github.com/i0bs', name: 'Github' }],
     },
     {
-      name: faker.name.fullName(),
-      position: faker.name.jobTitle(),
+      name: "Zoe",
+      position: "Frontend Engineer",
       image: faker.image.avatar(),
-      bio: faker.hacker.phrase(),
-      badges: [{ icon: Github, link: '', name: 'Github' }],
-    },
-    {
-      name: faker.name.fullName(),
-      position: faker.name.jobTitle(),
-      image: faker.image.avatar(),
-      bio: faker.hacker.phrase(),
-      badges: [],
+      bio: "Lorem ipsum, lorem ipsum.",
+      badges: [{ icon: Github, link: 'https://github.com/theS1LV3R', name: 'Github' }],
     },
   ];
 </script>
