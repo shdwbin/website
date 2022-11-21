@@ -2,6 +2,8 @@
   <div class="flex flex-row flex-wrap justify-between">
     <div class="w-1/2 min-w-[24rem] mr-auto flex-grow flex-shrink">
       <div class="flex flex-row mb-5">
+        <ShadowbinIcon
+          class="inline max-h-14 aspect-square ml-4 fill-accentShade dark:fill-neutralShade" />
         <div>
           <h2 class="font-semibold">
             We are <span class="font-extrabold">Shadowbin</span>.
@@ -11,8 +13,6 @@
             <span class="font-extrabold">file-sharing service</span>.
           </h3>
         </div>
-        <ShadowbinIcon
-          class="inline max-h-14 aspect-square ml-4 fill-accentShade dark:fill-neutralShade" />
       </div>
       <p>
         We're an international team of developers working on creating the best
