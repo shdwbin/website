@@ -28,7 +28,7 @@
   </Section>
   <Section name="Who We Are">
     <WeAreShadowbin class="mb-20" />
-    <InverstorsSponsors />
+    <InvestorsSponsors />
   </Section>
   <Section name="Get Involved">
     <LatestPosts />
@@ -43,7 +43,7 @@
   import LatestPosts from '@/components/HomeView/LatestPosts.vue';
   import Explore from '@/components/HomeView/Explore.vue';
   import WeAreShadowbin from '@/components/HomeView/WeAreShadowbin.vue';
-  import InverstorsSponsors from '@/components/HomeView/InverstorsAndSponsors.vue';
+  import InvestorsSponsors from '@/components/HomeView/InvestorsAndSponsors.vue';
 
   useHead({});
 </script>
