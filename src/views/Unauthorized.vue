@@ -1,8 +1,8 @@
 <template>
   <div class="w-full h-full flex flex-col items-center justify-center gap-3">
-    <h2>Page not found</h2>
+    <h2>Page not accessible</h2>
     <p>
-      The page <code>/{{ route.params.path[0] }}</code> was not found.
+      You are not authorized to view this page.
     </p>
     <RouterLink to="/">
       <PillButton class="mt-8" bold nogradient> Go home </PillButton>
@@ -18,6 +18,6 @@
   const route = useRoute();
 
   useHead({
-    title: 'Page Not Found',
+    title: 'Page Not Accessible',
   });
 </script>
