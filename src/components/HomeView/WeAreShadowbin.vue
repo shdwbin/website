@@ -60,14 +60,14 @@
         {
           name: "Hanna",
           position: "Founder",
-          image: await rest.get(Routes.user(333459879379337216)).displayAvatarURL,
+          image: await rest.get(Routes.user(333459879379337216)).displayAvatarURL(),
           bio: "Lorem ipsum, lorem ipsum.",
           badges: [{ icon: Github, link: 'https://github.com/xhxnna', name: 'Github' }],
         },
         {
           name: "Sophia",
           position: "Lead UX Engineer",
-          image: await rest.get(Routes.user(242351388137488384)).displayAvatarURL,
+          image: await rest.get(Routes.user(242351388137488384)).displayAvatarURL(),
           bio: "Sophia is the person behind all the UX and UI design of Shadowbin. " +
                "She has worked at numerous startups with years of professional experience " +
                "in the software industry.",
@@ -76,7 +76,7 @@
         {
           name: "Zoe",
           position: "Frontend Engineer",
-          image: await rest.get(Routes.user(279692618391093248)).displayAvatarURL,
+          image: await rest.get(Routes.user(279692618391093248)).displayAvatarURL(),
           bio: "Lorem ipsum, lorem ipsum.",
           badges: [{ icon: Github, link: 'https://github.com/theS1LV3R', name: 'Github' }],
         },
