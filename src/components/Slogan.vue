@@ -1,10 +1,10 @@
 <template>
   <span :class="`${gradient === 'full' ? gradientSVG : ''}`"
-    >An encrypted, privacy focused
+    >An encrypted,
     <span :class="`${gradient === 'end' ? gradientSVG : ''}`"
-      >file sharing service.</span
-    ></span
-  >
+      >privacy focused </span
+    >file sharing service.
+  </span>
 </template>
 
 <script setup lang="ts">
