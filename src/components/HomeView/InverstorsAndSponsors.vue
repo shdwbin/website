@@ -7,9 +7,9 @@
         v-bind="investor" />
       <RouterLink to="/">
         <InvestorOrSponsorCard
-          name="Your name here?"
+          name="Your name"
           class="italic"
-          person="Click here to support us" />
+          person="Support us today!" />
       </RouterLink>
     </div>
     <div class="w-1/2 min-w-[24rem]">
@@ -26,22 +26,5 @@
   import type { InvestorOrSponsor } from './InvestorOrSponsorCard.vue';
   import InvestorOrSponsorCard from './InvestorOrSponsorCard.vue';
 
-  const investors: InvestorOrSponsor[] = [
-    {
-      name: 'Very real co LTD.',
-      person: 'Some person at corp',
-    },
-    {
-      name: 'Very real co LTD.',
-      person: 'Some person at corp',
-    },
-    {
-      name: 'Very real co LTD.',
-      person: 'Some person at corp',
-    },
-    {
-      name: 'Very real co LTD.',
-      person: 'Some person at corp',
-    },
-  ];
+  const investors: InvestorOrSponsor[] = [];
 </script>
