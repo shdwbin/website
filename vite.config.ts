@@ -14,5 +14,8 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: ['@faker-js/faker'],
+    esbuildOptions: {
+      target: 'es2022',
+    },
   },
 });
