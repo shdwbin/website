@@ -4,7 +4,7 @@
     class="w-full lg:w-[31%] lg:max-w-sm p-5 min-w-[20rem]">
     <div
       v-if="topPillText"
-      class="dark:bg-neutralMain text-accentMain whitespace-nowrap w-min mx-auto -mt-9 mb-4 py-1 px-4 rounded-full">
+      class="dark:bg-neutralMain bg-neutralShade text-accentMain whitespace-nowrap w-min mx-auto -mt-9 mb-4 py-1 px-4 rounded-full">
       {{ topPillText }}
     </div>
     <div>
@@ -14,11 +14,13 @@
       <div class="flex flex-col gap-3" :class="{ 'text-[95%]': !highlighted }">
         <slot />
       </div>
-      <PillButton
-        theme="transparent"
-        class="whitespace-nowrap w-min mx-auto mt-5">
-        <RouterLink :to="link">{{ linkTitle }}</RouterLink>
-      </PillButton>
+      <div class="flex flex-row justify-center mt-4">
+        <RouterLink :to="link">
+          <PillButton theme="transparent" class="w-min h-min whitespace-nowrap">
+            {{ linkTitle }}
+          </PillButton>
+        </RouterLink>
+      </div>
     </div>
   </div>
 </template>
