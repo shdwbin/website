@@ -56,6 +56,6 @@
       icon: Github,
       link: 'https://github.com/shdwbin',
       label: 'Github',
-    },
+    }
   ];
 </script>

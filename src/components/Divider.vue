@@ -18,7 +18,7 @@
   }>();
 
   const contentID = computed(() =>
-    props.name.replace(/[^A-Za-z]{1,}/g, '-').toLowerCase()
+    props.name.replace(/[^A-Za-z]{+}/g, '-').toLowerCase()
   );
 </script>
 
