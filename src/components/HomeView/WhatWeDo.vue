@@ -5,7 +5,6 @@
       link="/"
       highlighted
       title="Encryption"
-      topPillText="Highlight"
       class="lg:order-2">
       <p>It's time to ditch non-encrypted file storage.</p>
       <p>
