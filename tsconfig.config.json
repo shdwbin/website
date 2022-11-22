@@ -2,7 +2,7 @@
   "extends": "@vue/tsconfig/tsconfig.node.json",
   "include": [
     "vite.config.*",
-    ".eslintrc.cjs",
+    ".eslintrc.js",
     "*.config.js",
     "*.config.ts"
   ],

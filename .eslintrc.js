@@ -3,6 +3,7 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 
 const { resolve } = require('node:path');
 
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   env: {
@@ -15,7 +16,7 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:vue/vue3-essential',
     'eslint:recommended',
-    '@vue/eslint-config-typescript',
+    '@vue/eslint-config-typescript/recommended',
     '@vue/eslint-config-prettier',
   ],
   settings: {
@@ -25,10 +26,16 @@ module.exports = {
     },
     'import/extensions': ['.ts', '.js', '.vue'],
   },
+  /** @type {import('@typescript-eslint/types').ParserOptions & import('eslint').Linter.ParserOptions} */
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: [resolve(__dirname, 'tsconfig.json'), resolve(__dirname, 'tsconfig.config.json')],
+    parser: '@typescript-eslint/parser',
+    project: [
+      resolve(__dirname, 'tsconfig.json'),
+      resolve(__dirname, 'tsconfig.config.json'),
+    ],
+    tsconfigRootDir: __dirname,
   },
   rules: {
     'prettier/prettier': 'warn',
@@ -37,6 +44,7 @@ module.exports = {
 
     '@typescript-eslint/naming-convention': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-require-imports': 'off',
     '@typescript-eslint/restrict-template-expressions': [
       'warn',
       { allowNullish: true },
