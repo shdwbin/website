@@ -24,7 +24,7 @@
     image?: string;
     position: string;
     bio?: string;
-    badges: Badge[];
+    badges?: Badge[];
   };
 
   defineProps<Person>();
