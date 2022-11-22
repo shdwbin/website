@@ -6,7 +6,7 @@
     }">
     <div class="w-4/5 max-w-5xl mx-auto fill-accentMain dark:fill-neutralMain">
       <div class="flex flex-row">
-        <ShadowbinIcon class="mr-5 w-14" />
+        <ShadowbinLogo class="mr-5 w-14" />
         <h2 class="h-min my-auto">shadowbin</h2>
       </div>
       <p>
@@ -40,7 +40,7 @@
   import Slogan from './Slogan.vue';
   import VerticalDivider from './VerticalDivider.vue';
   import ThemeToggle from './ThemeToggle.vue';
-  import ShadowbinIcon from '@/components/icons/ShadowbinIcon.vue';
+  import ShadowbinLogo from '@/components/logos/ShadowbinLogo.vue';
   import usePreferenceStore from '@/stores/preferences';
 
   const preferences = usePreferenceStore();

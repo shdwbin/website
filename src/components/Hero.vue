@@ -9,7 +9,7 @@
       scale: 'crop',
     }">
     <div class="flex flex-nowrap flex-row justify-center">
-      <ShadowbinIcon class="mr-5" />
+      <ShadowbinLogo class="mr-5" />
       <h1 class="h-min my-auto text-[4.5rem]">shadowbin</h1>
     </div>
     <h2 class="text-[2.7rem] max-w-3xl text-center my-8">
@@ -26,7 +26,7 @@
   import PillButton from './buttons/PillButton.vue';
   import Slogan from './Slogan.vue';
   import usePreferenceStore from '@/stores/preferences';
-  import ShadowbinIcon from '@/components/icons/ShadowbinIcon.vue';
+  import ShadowbinLogo from '@/components/logos/ShadowbinLogo.vue';
 
   const preferences = usePreferenceStore();
 </script>

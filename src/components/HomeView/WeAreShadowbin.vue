@@ -2,7 +2,7 @@
   <div class="flex flex-row flex-wrap justify-between">
     <div class="w-1/2 min-w-[24rem] mr-auto flex-grow flex-shrink">
       <div class="flex flex-row mb-5">
-        <ShadowbinIcon
+        <ShadowbinLogo
           class="inline max-h-14 aspect-square mr-4 fill-accentShade dark:fill-neutralShade" />
         <div>
           <h2 class="font-semibold">
@@ -49,7 +49,7 @@
 <script setup lang="ts">
   import PersonCard, { type Person } from './PersonCard.vue';
   import PersonCardSkeleton from './PersonCardSkeleton.vue';
-  import ShadowbinIcon from '@/components/icons/ShadowbinIcon.vue';
+  import ShadowbinLogo from '@/components/logos/ShadowbinLogo.vue';
 
   const people: Person[] = [
     {
