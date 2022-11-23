@@ -11,6 +11,7 @@
       <h3 :class="{ 'text-3xl': highlighted }" class="text-center">
         {{ title }}
       </h3>
+      <br />
       <div class="flex flex-col gap-3" :class="{ 'text-[95%]': !highlighted }">
         <slot />
       </div>
