@@ -8,6 +8,7 @@
       <img
         v-if="!skeleton"
         class="h-full w-full rounded-sm"
+        aria-label="Profile picture"
         :src="githubData.avatar_url ?? 'https://via.placeholder.com/256.png'" />
     </div>
 
