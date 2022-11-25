@@ -1,7 +1,7 @@
 <template>
   <section class="mb-28" :aria-label="name">
     <Divider class="mb-14" :name="name" />
-    <div class="max-w-6xl w-4/5 m-auto" v-bind="$attrs">
+    <div class="max-w-7xl w-4/5 m-auto" v-bind="$attrs">
       <slot />
     </div>
   </section>

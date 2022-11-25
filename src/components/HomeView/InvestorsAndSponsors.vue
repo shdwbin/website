@@ -14,10 +14,9 @@
       </RouterLink>
     </div>
     <div class="lg:w-1/2 w-full min-w-[24rem] lg:order-2 order-1 mb-8">
-      <h2 class="font-semibold h-min">Our investors and sponsors.</h2>
+      <h2 class="font-semibold h-min">Backed by trust.</h2>
       <p>
-        Shadowbin would not be possible without our investors and sponsors. We
-        thank each of them very much.
+        Those we're thankful for backing our product.
       </p>
     </div>
   </div>

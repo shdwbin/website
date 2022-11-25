@@ -55,20 +55,26 @@
     {
       githubUsername: 'xhxnna',
       role: 'Founder',
-      bio: 'Lorem ipsum, lorem ipsum.',
+      bio: 'Hanna is a seasoned full-stack developer with years of professional ' +
+           'experience in the IT industry and a supporter of many OSS projects.',
     },
     {
-      role: 'Lead UX Engineer',
+      role: 'UX/UI Engineer',
       githubUsername: 'i0bs',
       bio:
-        'Sophia is the person behind all the UX and UI design of Shadowbin. ' +
-        'She has worked at numerous startups with years of professional experience ' +
-        'in the software industry.',
+        'Sophia is the person behind all UX and UI design of Shadowbin, ' +
+        'with numerous years of OSS and professional developer experience.'
     },
     {
       role: 'Frontend Engineer',
       githubUsername: 'theS1LV3R',
-      bio: 'Lorem ipsum, lorem ipsum.',
+      bio: 'Zoe are our main frontend engineer responsible for building and ' +
+           'implementing the UI design of Shadowbin.',
+    },
+    {
+      role: 'Join us today!',
+      githubUsername: 'shdwbin',
+      bio: '',
     },
   ];
 </script>

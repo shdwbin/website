@@ -4,7 +4,7 @@
     :style="{
       background: `linear-gradient(180deg, rgba(${color}, 0) 0%, rgba(${color}, 1) 23.44%, rgba(${color}, 1) 100%)`,
     }">
-    <div class="w-4/5 max-w-5xl mx-auto fill-accentMain dark:fill-neutralMain">
+    <div class="w-4/5 max-w-7xl mx-auto fill-accentMain dark:fill-neutralMain">
       <div class="flex flex-row">
         <ShadowbinLogo class="mr-5 w-14" />
         <h2 class="h-min my-auto">shadowbin</h2>

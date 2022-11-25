@@ -31,21 +31,9 @@
 
   const posts = [
     {
-      title: 'Lorem ipsum.',
-      preview: 'Lorem ipsum, lorem ipsum lorem **ipsum**.',
+      title: 'Announcing Shadowbin.',
+      preview: 'Let\'s redefine file sharing and privacy.\n\n**_Coming soon._**',
       link: '/',
-    },
-    {
-      title: 'Lorem ipsum.',
-      preview:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporal and lots of other lorem ipsum',
-      link: '/',
-    },
-    {
-      title: 'Lorem ipsum.',
-      preview:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporal and lots of other lorem ipsum',
-      link: '/',
-    },
+    }
   ].slice(0, 2);
 </script>
