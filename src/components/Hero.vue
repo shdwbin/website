@@ -15,9 +15,11 @@
     <h2 class="text-[2.7rem] max-w-3xl text-center my-8">
       <Slogan :gradient="preferences.lightTheme ? 'none' : 'end'" />
     </h2>
-    <PillButton :right-icon="ArrowRight" class="text-xl" nogradient>
-      <RouterLink to="/">Join waitlist</RouterLink>
-    </PillButton>
+    <RouterLink to="/" class="pointer-events-none">
+      <PillButton :right-icon="ArrowRight" class="text-xl" disabled>
+        Join waitlist
+      </PillButton>
+    </RouterLink>
   </div>
 </template>
 
