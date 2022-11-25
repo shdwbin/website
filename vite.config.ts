@@ -1,4 +1,5 @@
 import { fileURLToPath, URL } from 'node:url';
+import type { ViteSSGOptions } from 'vite-ssg';
 
 import { defineConfig } from 'vite';
 import imagemin from 'vite-plugin-imagemin';
@@ -18,4 +19,12 @@ export default defineConfig({
       target: 'es2022',
     },
   },
+
+  // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+  ssgOptions: {
+    formatting: 'minify',
+    dirStyle: 'nested',
+    mock: true,
+    format: 'esm',
+  } as ViteSSGOptions,
 });

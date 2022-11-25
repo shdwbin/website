@@ -2,9 +2,11 @@
   "extends": "@vue/tsconfig/tsconfig.node.json",
   "include": [
     "vite.config.*",
+    "vite.ssg.ts",
     ".eslintrc.js",
     "*.config.js",
-    "*.config.ts"
+    "*.config.ts",
+    "*.config.cjs"
   ],
   "compilerOptions": {
     "composite": true,
