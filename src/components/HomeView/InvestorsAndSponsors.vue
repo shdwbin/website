@@ -15,9 +15,7 @@
     </div>
     <div class="lg:w-1/2 w-full min-w-[24rem] lg:order-2 order-1 mb-8">
       <h2 class="font-semibold h-min">Backed by trust.</h2>
-      <p>
-        Those we're thankful for backing our product.
-      </p>
+      <p>Those we're thankful for backing our product.</p>
     </div>
   </div>
 </template>
