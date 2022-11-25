@@ -12,7 +12,7 @@
           theme === 'black',
         'bg-gradient-to-r from-accentTintStart to-accentTintEnd text-neutralMain hover:shadow hover:shadow-gray-500 disabled:shadow-none':
           theme === 'gradient',
-        'bg-transparent border-2 border-accentShade dark:border-neutralShade hover:border-accentMain dark:hover:border-neutralMain':
+        'bg-transparent border-2 border-accentShade dark:border-neutralShade hover:border-accentMain hover:bg-neutralMain hover:text-accentMain dark:hover:border-neutralMain':
           theme === 'transparent',
         'bg-neutralMain dark:bg-accentMain text-accentMain dark:text-neutralMain':
           theme === 'inverted',
