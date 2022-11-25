@@ -48,7 +48,7 @@
   }
 
   * {
-    box-sizing: border-box;
+    @apply box-border transition-all;
   }
 
   h1,
