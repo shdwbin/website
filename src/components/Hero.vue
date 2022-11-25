@@ -15,11 +15,14 @@
     <h2 class="text-[2.7rem] max-w-3xl text-center my-8">
       <Slogan :gradient="preferences.lightTheme ? 'none' : 'end'" />
     </h2>
-    <RouterLink to="/" class="pointer-events-none">
+
+    <PillButton disabled class="italic">Waitlist coming soon</PillButton>
+
+    <!-- <RouterLink to="/" class="pointer-events-none">
       <PillButton :right-icon="ArrowRight" class="text-xl" disabled>
         Join waitlist
       </PillButton>
-    </RouterLink>
+    </RouterLink> -->
   </div>
 </template>
 
