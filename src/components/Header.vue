@@ -4,10 +4,13 @@
       <ShadowbinLogo class="max-h-full m-auto float-left h-10" />
       <div class="float-right h-full flex flex-row items-center text-lg gap-4">
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/">Roadmap</RouterLink>
-        <RouterLink to="/">
+        <!-- <RouterLink to="/">Roadmap</RouterLink> -->
+        <PillButton theme="gradient" bold class="italic">
+          Waitlist coming soon
+        </PillButton>
+        <!-- <RouterLink to="/">
           <PillButton theme="gradient" bold>Join Cloud waitlist</PillButton>
-        </RouterLink>
+        </RouterLink> -->
       </div>
     </div>
   </header>
