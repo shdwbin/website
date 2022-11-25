@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" tabindex="-1">
     <Header />
     <main>
       <RouterView />
