@@ -9,8 +9,8 @@
       scale: 'crop',
     }">
     <div class="flex flex-nowrap flex-row justify-center">
-      <ShadowbinLogo class="mr-5" />
-      <h1 class="h-min my-auto text-[4.5rem]">shadowbin</h1>
+      <ShadowbinLogo class="mr-5 lg:h-28 h-[4.5rem]" />
+      <h1 class="h-min my-auto text-[3.5rem] lg:text-[4.5rem]">shadowbin</h1>
     </div>
     <h2 class="text-[2.7rem] max-w-3xl text-center my-8">
       <Slogan :gradient="preferences.lightTheme ? 'none' : 'end'" />
@@ -27,7 +27,6 @@
 </template>
 
 <script setup lang="ts">
-  import { ArrowRight } from 'lucide-vue-next';
   import PillButton from './buttons/PillButton.vue';
   import Slogan from './Slogan.vue';
   import usePreferenceStore from '@/stores/preferences';
