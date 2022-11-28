@@ -11,5 +11,5 @@ See the [Vite Configuration Reference](https://vitejs.dev/config/) for details r
 - Installation: `$ pnpm install`
 - Compiling and hot-reloading during development: `$ pnpm dev`
 - Type checking, compiling and minifying during production: `$ pnpm build`
-- Running unit tests with [Vitest](https://vitest.dev/): `$ pnvpm test:unit`
+- Running unit tests with [Vitest](https://vitest.dev/): `$ pnpm test:unit`
 - Linting: `$ pnpm lint`
