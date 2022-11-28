@@ -30,6 +30,12 @@ export const createApp = ViteSSG(
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'og:title', content: 'Shadowbin' },
+        { name: 'og:description', content: 'An encrypted, privacy focused file sharing service' },
+        { name: 'og:url', content: 'https://shadowb.in' },
+        { name: 'og:image', content: 'https://avatars.githubusercontent.com/u/117332791?v=4' }, // placeholder, should move to a CDN soon.
+        { name: 'og:image:height', content: '256' },
+        { name: 'og:image:width', content: '256' },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
