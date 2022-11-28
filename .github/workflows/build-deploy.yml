@@ -9,25 +9,47 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.5.1
         with:
           node-version-file: .tool-versions
+      
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.2.4
         with:
           version: latest
-      - run: pnpm i
-      - run: pnpm run build
+      
+      - name: Get pnpm cache directory
+        id: pnpm-cache
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install node_modules using pnpm
+        run: pnpm i
+
+      - name: Build project
+        run: pnpm run build
+
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.1
         with:
           path: dist/
+
       - name: Setup certs
         run: "echo '${{ secrets.SSH_KEY }}' > /tmp/key"
+      
       - name: Upload to webserver
         run: |        
-          scp -r -v -i /tmp/key \
+          scp -r -v -P 23 -i /tmp/key \
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null\
             dist/* ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/srv/nginx/webroot/shadowbin-staging
