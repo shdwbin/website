@@ -3,7 +3,7 @@
   "include": [
     "vite.config.*",
     "vite.ssg.ts",
-    ".eslintrc.js",
+    ".eslintrc.cjs",
     "*.config.js",
     "*.config.ts",
     "*.config.cjs"

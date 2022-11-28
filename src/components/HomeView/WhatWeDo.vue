@@ -1,11 +1,7 @@
 <template>
   <div
     class="flex flex-wrap lg:flex-row flex-col justify-evenly place-items-end gap-8 lg:gap-6">
-    <FeatureCard
-      link="/"
-      highlighted
-      title="Encryption"
-      class="lg:order-2">
+    <FeatureCard link="/" highlighted title="Encryption" class="lg:order-2">
       <p>It's time to ditch non-encrypted file storage.</p>
       <p>
         Shadowbin's privacy is taken to the next level: we encrypt every single

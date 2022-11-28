@@ -32,8 +32,8 @@
   const posts = [
     {
       title: 'Announcing Shadowbin.',
-      preview: 'Let\'s redefine file sharing and privacy.\n\n**_Coming soon._**',
+      preview: "Let's redefine file sharing and privacy.\n\n**_Coming soon._**",
       link: '/',
-    }
+    },
   ].slice(0, 2);
 </script>

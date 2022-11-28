@@ -4,7 +4,7 @@
     class="w-full lg:w-[31%] lg:max-w-sm p-5 min-w-[20rem]">
     <div
       v-if="topPillText"
-    class="dark:bg-gradient-to-r from-accentTintStart to-accentTintEnd dark:text-neutralMain bg-neutralShade text-accentMain whitespace-nowrap w-min mx-auto -mt-9 mb-4 py-1 px-4 rounded-full">
+      class="dark:bg-gradient-to-r from-accentTintStart to-accentTintEnd dark:text-neutralMain bg-neutralShade text-accentMain whitespace-nowrap w-min mx-auto -mt-9 mb-4 py-1 px-4 rounded-full">
       {{ topPillText }}
     </div>
     <div>
