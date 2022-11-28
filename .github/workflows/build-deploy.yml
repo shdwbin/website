@@ -1,0 +1,39 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.5.1
+        with:
+          node-version-file: .tool-versions
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.4
+      - run: pnpm i
+      - run: pnpm run build
+      - name: Upload artifacts
+        uses: actions/upload-artifact@master
+        with:
+          path: dist/
+        
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@master
+        with:
+          path: dist/
+      - name: Setup certs
+        run: "echo '${{ secrets.SSH_KEY }}' > /tmp/key"
+      - name: Upload to webserver
+        run: |        
+          scp -r -v -i /tmp/key \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null\
+            dist/* ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/srv/nginx/webroot/shadowbin-staging
