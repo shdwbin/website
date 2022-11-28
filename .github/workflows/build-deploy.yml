@@ -44,8 +44,10 @@ jobs:
         with:
           path: dist/
 
-      - name: Setup certs
-        run: "echo '${{ secrets.SSH_KEY }}' > /tmp/key"
+      - name: Setup keys
+        run: | 
+          echo '${{ secrets.SSH_KEY }}' > /tmp/key
+          chmod 0600 /tmp/key
       
       - name: Upload to webserver
         run: |        
