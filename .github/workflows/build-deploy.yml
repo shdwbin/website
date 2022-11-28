@@ -15,20 +15,10 @@ jobs:
           node-version-file: .tool-versions
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.2.4
+        with:
+          version: latest
       - run: pnpm i
       - run: pnpm run build
-      - name: Upload artifacts
-        uses: actions/upload-artifact@master
-        with:
-          path: dist/
-        
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download artifacts
-        uses: actions/download-artifact@master
-        with:
-          path: dist/
       - name: Setup certs
         run: "echo '${{ secrets.SSH_KEY }}' > /tmp/key"
       - name: Upload to webserver
